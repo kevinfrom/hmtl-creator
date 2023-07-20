@@ -1,0 +1,24 @@
+{
+    "name": "kevin/php-html-creator",
+    "description": "Easily create and manage HTML tags",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HtmlCreator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kevin From",
+            "email": "kevinfrom@live.dk"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "test": "phpunit --testdox tests"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    }
+}
