@@ -17,6 +17,16 @@ class HtmlTag extends BaseTag
         return 'html';
     }
 
+    public function getHead(): HeadTag
+    {
+        return $this->head;
+    }
+
+    public function getBody(): BodyTag
+    {
+        return $this->body;
+    }
+
     public function render(): string
     {
         return '<!DOCTYPE html><html>' . $this->head->render() . $this->body->render() . '</html>';
